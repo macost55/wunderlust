@@ -53,8 +53,8 @@ table {
 
 :root{
 	font-size: 16px;
-	--pfonts: Montserrat, sans-serif;
-	--hfonts: Molle, serif;
+	--pfonts: Montserrat;
+	--hfonts: Molle;
 	--yellow: #F6D64A;
 	--teal: #55BCD5;
 	--purple: #9B26B0;
@@ -96,19 +96,20 @@ header {
 
 /* ----- HEADING STYLES ----- */
 h1{
-	font: var(--hfonts);
-	font-weight: 400;
+	font-family: Molle;
+	font-weight: 400 italic;
 	font-size: 2rem;
-	text-align: center;
+	text-align: left;
   }
 
 h2{
-	font: var(--hfonts);
+	font-family: var(--hfonts);
 	font-weight: 400;
 	font-size: 1.5rem;
 	margin: 1rem 0;
   }
 h3{
+  font-family: var(--hfonts);
 	font-size: 1.15rem;
 	margin: 0.5rem 0;
   }
@@ -129,21 +130,24 @@ h4{
   }
 
 /* ----- NAVIGATION STYLES ----- */
-#toggle menu{
-
+#menu-toggle{
+  display: inline-block;
+  background-color: var(--yellow);
+  text-align: center;
+  text-decoration: none;
 }
 
 nav a{
 	text-align: center;
-	padding: 1rem;
-	margin: 1rem 0;
 	background-color: var(--teal);
 	color: var(--black);
-	font-weight: 400;
+	font-weight: Medium 500;
   }
 
 /* ----- IMAGE STYLES ----- */
-
+img{
+  width: 100%;
+}
 
 /* ----- LINK STYLES ----- */
 
@@ -164,7 +168,8 @@ p{
   }
 /* ----- ABOUT your trip STYLES ----- */
 #plan{
-
+  
+  background-color: var(--yellow);
 }
 /* ----- testimony SECTION STYLES ----- */
 #testimonials{
@@ -173,12 +178,12 @@ p{
 
 /* ----- ABOUT destination STYLES ----- */
 #about {
-
+  background-color: var(--blue);
 }
 
 /* ----- Form STYLES ----- */
-#contact{
-
+#contact span{
+  font-family: var(--pfonts);
 }
 /* ----- FOOTER STYLES ----- */
 footer{
@@ -188,7 +193,7 @@ footer{
 	line-height: 2;
   }
   footer p, footer a{
-	font-family: Monserrat sans-serif;
+	font-family: Monserrat, sans-serif;
 	font-weight: 300;
 	text-align: center;
   }
@@ -205,7 +210,3 @@ footer{
 
 /*large screen*/
 @media screen and (min-width: 980px){}
-
-
-
- 
