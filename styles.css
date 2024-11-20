@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   MARICELA ACOSTA CONTRERAS
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat);
+
+
+:root{
+	font-size: 16px;
+	--pfonts: Montserrat, sans-serif;
+	--hfonts: Molle, serif;
+	--yellow: #F6D64A;
+	--teal: #55BCD5;
+	--purple: #9B26B0;
+	--blue: #499BD2;
+	--darkgray: #222222;
+	--lightgray: #EAEAEA;
+	--white: #FFFFFF;
+	--black: #000000;
+}
+/* ----- SKIP LINK STYLES ----- */
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+   
+  #skip:focus{
+	position: static;
+	width: auto;
+	height: auto;
+  }
+
+  header {
+	background-color: var(--teal);
+  }
+
+/* ----- BODY STYLES ----- */
+
+
+
+
+/* ----- HEADER STYLES ----- */
+
+
+
+/* ----- HEADING STYLES ----- */
+
+
+
+/* ----- HIDDEN CONTENT STYLES ----- */
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+/* ----- NAVIGATION STYLES ----- */
+
+
+/* ----- IMAGE STYLES ----- */
+
+
+/* ----- LINK STYLES ----- */
+
+/* ----- TEXT STYLES ----- */
+
+/* ----- MAIN STYLES ----- */
+
+/* ----- Majorca STYLES ----- */
+
+/* ----- ABOUT your trip STYLES ----- */
+
+/* ----- testimony SECTION STYLES ----- */
+
+
+/* ----- ABOUT destination STYLES ----- */
+
+/*small screen*/
+
+
+
+/*medium screen*/
+
+ 
+
+
+
+/*large screen*/
+
+
+
+
+
+/*extra large screen*/
+ 
