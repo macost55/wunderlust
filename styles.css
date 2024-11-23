@@ -85,37 +85,59 @@ table {
 body{
 	font-family: var(--pfonts);
 	color: var(--black);
+  margin: 1rem auto;
+  
 }
 
 
 /* ----- HEADER STYLES ----- */
 header {
-	background-color: var(--teal);
+	background-image: linear-gradient(#55BCD5, #FFFFFF);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  gap: 0.5rem;
+  align-items: center;
   }
-
-
+#logo{
+	padding: 0;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+}
+header p{
+  grid-row: 3;
+  grid-column: 1;
+  padding: 20px;
+}
 /* ----- HEADING STYLES ----- */
 h1{
 	font-family: Molle;
 	font-weight: 400 italic;
-	font-size: 2rem;
+	font-size: 4rem;
 	text-align: left;
+	margin: 0.5rem 0;
+	padding: 20px;
   }
 
 h2{
 	font-family: var(--hfonts);
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	margin: 1rem 0;
+  padding: 20px;
   }
 h3{
   font-family: var(--hfonts);
-	font-size: 1.15rem;
+	font-size: 2rem;
 	margin: 0.5rem 0;
+  padding: 20px;
   }
   
 h4{
-
+  font-weight: bold;
+  padding: 20px;
   }
 
 /* ----- HIDDEN CONTENT STYLES ----- */
@@ -131,59 +153,181 @@ h4{
 
 /* ----- NAVIGATION STYLES ----- */
 #menu-toggle{
-  display: inline-block;
+  display:flex;
+  justify-content: flex-start;
   background-color: var(--yellow);
   text-align: center;
   text-decoration: none;
+  padding: 20px 30px;
+  width:200px;
+  height:20px;
+}
+#menu-toggle [type=checkbox] {
+  display: none;
+}
+h1{
+  grid-row: 2;
+  grid-column: 1;
 }
 
 nav a{
+  display: block;
 	text-align: center;
 	background-color: var(--teal);
 	color: var(--black);
-	font-weight: Medium 500;
+	font-weight: bold;
+  padding: 15px 40px;
   }
+
+nav li{
+  list-style-type: none;
+  position: relative;
+  margin: 2px;
+  padding: 0em 0em 0.5em 0.5em;
+}
 
 /* ----- IMAGE STYLES ----- */
 img{
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25rem;
 }
 
-/* ----- LINK STYLES ----- */
 
 /* ----- TEXT STYLES ----- */
 q{
 	font-style: italic;
+  
   }
   
-p{
-
-  }
+p, q{
+	max-width: 70ch;
+  font-size: 1.15rem;
+}
 
 /* ----- MAIN STYLES ----- */
 
 /* ----- Majorca STYLES ----- */
-#intro img{
-	width: 100%;
+#intro img-grid{
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  gap: 0.5rem;
+  align-items: center;
   }
+#intro p{
+  margin-bottom: 3em;
+  padding: 20px;
+}
 /* ----- ABOUT your trip STYLES ----- */
 #plan{
-  
   background-color: var(--yellow);
 }
+#plan h4{
+  text-align: center;
+}
+#plan section{
+  max-width: 350px;
+  margin: 0 auto 3rem auto;
+  display: block;
+  background-color: var(--teal);
+  border-radius: .50rem;
+  border: solid;
+  border-color: var(--white);
+  border-width: 4PX;
+  
+}
+
+
 /* ----- testimony SECTION STYLES ----- */
 #testimonials{
+  display:grid;
+  
+}
 
+#testimonials h4{
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto 3rem auto;
+}
+
+#testimonials p{
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto 2rem auto;
+}
+
+#testimonials q{
+  text-align: center;
+  max-width: 350px;
 }
 
 /* ----- ABOUT destination STYLES ----- */
 #about {
   background-color: var(--blue);
+  margin-bottom: 3em;
+}
+
+#about div{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  justify-items: center;
+}
+
+#about h4, #about p{
+  text-align: center;
 }
 
 /* ----- Form STYLES ----- */
 #contact span{
   font-family: var(--pfonts);
+  font-weight: 400 italic;
+  font-size: 1rem;
+}
+form{
+  display:grid;
+}
+input{
+  display: flexbox;
+  border-color: #9B26B0;
+  width: 80%;
+  padding: 15px 10px;
+  margin: 5% 0;
+}
+label, legend {
+  font-weight: bold;
+}
+input[type=radio] {
+ border-color: var (--purple);
+ height: 50px;
+ width: 50px;
+ margin: 14px;
+ accent-color: var(--purple);
+ border-width: medium;
+}
+select{
+  border-color: #9B26B0;
+  border-width: medium;
+  width: 100%;
+  padding: 15px 10px;
+  margin: 5% 0;
+}
+input[type=submit] {
+ background-color: #9B26B0;
+ border: none;
+ display: inline-block;
+ color: white;
+ padding: 16px 0px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5% 0;
+ width: 80%;
+ font-size: 16px;
+ font-weight: 600;
+ position: center;
+ 
 }
 /* ----- FOOTER STYLES ----- */
 footer{
@@ -193,20 +337,112 @@ footer{
 	line-height: 2;
   }
   footer p, footer a{
+  display: grid;
 	font-family: Monserrat, sans-serif;
 	font-weight: 300;
 	text-align: center;
   }
 
+/* ----- HOVER STYLES ----- */
+@media (hover:hover){
+  
+  nav a:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+  }
+}
 /*small screen*/
-@media screen and (min-width: 320px){}
+@media screen and (min-width: 320px){
+  nav a{
+    visibility: hidden;
+  }
+}
 
 
 /*medium screen*/
-@media screen and (min-width: 750px){}
- 
+@media screen and (min-width: 750px){
+header{	
+    display: grid;
+    grid-template-columns: 1FR 3FR 3FR;
+    gap: 0rem;
+}
+
+h1{
+  grid-row: 1;
+  grid-column: 2;
+  }
+
+header p{
+  grid-row: 2;
+  grid-column: 2;
+}
+nav{
+  grid-row: 3;
+  grid-column: 1;
+  grid-auto-flow: column;
+}
+#menu-toggle{
+  visibility:hidden;
+}
+
+nav a{
+  visibility: visible;
+  background-color: #FFFFFF;
+  gap: 1rem;
+  
+}
+
+#intro {
+  display: grid;
+  grid-template: 1FR 1FR 1FR;
+}
+#intro h2{
+  grid-row: 1;
+  grid-column: 1;
+}
+#intro p{
+  grid-row: 2;
+  grid-column: 1;
+}
+#intro img-grid{
+  grid-row: 3;
+  grid-column: span 3;
+}
+#plan section{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+  form{
+  display: flex;	
+}
+  
+}
 
 
 
 /*large screen*/
-@media screen and (min-width: 980px){}
+@media screen and (min-width: 980px){
+  header { 
+       display: grid;
+       grid-template-columns: 1FR 3FR 3FR;
+       grid-template-columns: 1FR 3FR 3FR;
+       gap: 0rem;
+     }
+    header nav{
+      grid-row: 1;
+      grid-column: 4;
+      align-self: start;
+    }
+  #testimonials section{
+    display: grid;
+    grid-template-columns: 1FR 1FR 1FR 1fr;
+    gap: 0rem;
+  }
+  #testimonials img{
+    grid-row: 1;
+    grid-column-start: span 4;
+  }
+}
